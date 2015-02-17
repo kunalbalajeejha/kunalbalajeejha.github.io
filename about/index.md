@@ -6,5 +6,5 @@ modified: 2014-08-08T20:53:07.573882-04:00
 comments: true
 ---
 
-A blog for sharing code.
+I am a programmer interested in Java, Perl and Unix. My other interests include iOS and Mac OS X development.This is a blog for sharing code.
 
