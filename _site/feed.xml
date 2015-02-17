@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+<title type="text">Long Road Ahead</title>
+<generator uri="https://github.com/jekyll/jekyll">Jekyll</generator>
+<link rel="self" type="application/atom+xml" href="/feed.xml" />
+<link rel="alternate" type="text/html" href="" />
+<updated>2015-02-17T19:57:43+05:30</updated>
+<id>/</id>
+<author>
+  <name>Kunal Jha</name>
+  <uri>/</uri>
+  
+</author>
+
+
+  
+
+<entry>
+  <title type="html"><![CDATA[Apple Script to Update Address Book]]></title>
+  <link rel="alternate" type="text/html" href="/applescript/programming/applescript/" />
+  <id>/applescript/programming/applescript</id>
+  <published>2011-12-19T18:30:37+05:30</published>
+  <updated>2011-12-19T18:30:37+05:30</updated>
+  <author>
+    <name>Kunal Jha</name>
+    <uri></uri>
+    
+  </author>
+  <content type="html">
+    &lt;p&gt;I have recently travelled from Singapore to Chennai. And all my contact numbers are having the number “019” added infront of them. This was done, so as to get the cheaper rates when calling to India. Now that I am back in India, I was faced with the task of manually (either on Mac or iPhone) replacing all the number “019” with “+” sign in my contacts.
+Then I remembered about &lt;em&gt;AppleScript&lt;/em&gt; and how I can easily do this with a little bit of programming.
+The result is the below peice of code. In this process I also re-discovered the &lt;a href=&quot;http://www.macosxautomation.com&quot;&gt;Mac OSX Automation&lt;/a&gt; website, which has the sub-routine for &lt;a href=&quot;http://www.macosxautomation.com/applescript/sbrt/sbrt-06.html&quot;&gt;text search and replace&lt;/a&gt;.&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/kunalbalajeejha/9601c290b9c2b4a4a89f.js&quot;&gt; &lt;/script&gt;
+
+
+    &lt;p&gt;&lt;a href=&quot;/applescript/programming/applescript/&quot;&gt;Apple Script to Update Address Book&lt;/a&gt; was originally published by Kunal Jha at &lt;a href=&quot;&quot;&gt;Long Road Ahead&lt;/a&gt; on December 19, 2011.&lt;/p&gt;
+  </content>
+</entry>
+
+</feed>
