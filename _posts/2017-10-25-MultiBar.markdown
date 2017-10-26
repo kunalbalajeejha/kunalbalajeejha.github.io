@@ -1,0 +1,44 @@
+---
+layout: post
+title:  "Go Command Line Progress Bar"
+date:   2017-10-25 18:23:19 +0900
+categories: go programming
+---
+The last post was 6 years back and it was the first post.
+
+This time I am thinking of keeping a regular small updates on technical issue I have encountered and solutions which I have found for them.
+
+**Problem** : For a project find I need to show nested progress bars. The first bar for a Flight level progress and second bar I needed for the PNR level progress.
+
+**Solution** : There are [multiple libraries][awesome] available in Go lang but the one I could use was [Multi Progress Bar][mpb]. 
+
+The code snippet is given below :
+
+{% highlight go %}
+p := mpb.New()
+name := "Flights :"
+bar := p.AddBar(int64(len(flightList)), 
+		mpb.PrependDecorators(			
+			decor.StaticName(name, len(name), 0),
+	),)
+
+for _,flight := range flightList{
+	
+	pnrs := getPNRList(flight)
+	name2 := "PNRs for "+flight.Carrier+strconv.Itoa(flight.FlightNumber)
+	bar2 := p.AddBar(int64(len(pnrs)), 
+		mpb.PrependDecorators(			
+			decor.StaticName(name2, len(name2), 0),
+	),)
+	for _, pnr := range pnrs{
+		addOSIComments(pnr,flight)
+		bar2.Increment()
+	}
+	bar.Increment()
+}
+p.Stop()
+{% endhighlight %}
+
+
+[mpb]: https://github.com/vbauerster/mpb
+[awesome]: https://awesome-go.com/
